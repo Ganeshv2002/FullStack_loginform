@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgba(53, 28, 122, 0.3); /* Apply the color to all text */
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Updated to column layout */
+    align-items: center;
+    background-color: aliceblue; /* Set the background color */
+    font-family: 'roboto', sans-serif;
+}
+
+.top-container {
+    position: relative;
+    width: 90%;
+    border: 5px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Added margin to create space between greeting and images */
+    background-color: white; /* Set the background color for the top container */
+}
+
+.logout {
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 16px;
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.greeting-container {
+    display: flex;
+    align-items: center;
+}
+
+.greeting {
+    font-family: 'dosis';
+    font-size: 30px; /* Adjusted font size for better aesthetics */
+    /* color: #333; */ /* Remove the specific color for greeting */
+}
+
+/* Add this style to style the image container */
+.image-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Style for each date container */
+.date-container {
+    text-align: center;
+}
+
+/* Style for images */
+.date-container img {
+    width: 200px; /* Set a fixed width for the images */
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 8px;
+}
